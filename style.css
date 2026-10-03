@@ -1,0 +1,241 @@
+/* ---------- IMPOSTAZIONI GENERALI ---------- */
+
+:root {
+  --verde-scuro: #0e3b34;
+  --corallo: #ff6b4d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  background-color: var(--verde-scuro);
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 42px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--corallo);
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.social-icons a:hover {
+  color: var(--corallo);
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  background: linear-gradient(135deg, var(--verde-scuro), #1f6f58);
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--corallo);
+  color: var(--verde-scuro);
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #e85a3d;
+}
+
+/* ---------- SEZIONI ---------- */
+
+.chi-siamo,
+.offerta,
+.impatto {
+  padding: 80px 0;
+}
+
+.chi-siamo h2,
+.offerta h2,
+.impatto h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--verde-scuro);
+}
+
+.chi-siamo .intro {
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+/* ---------- VISION E MISSION ---------- */
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.box {
+  flex: 1 1 250px;
+  background-color: #f4f6f5;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.box h3 {
+  color: #1f6f58;
+  margin-bottom: 10px;
+}
+
+/* ---------- COSA OFFRIAMO ---------- */
+
+.offerta {
+  background-color: #f4f6f5;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  flex: 1 1 220px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card i {
+  font-size: 24px;
+  color: var(--corallo);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.card h3 {
+  color: var(--verde-scuro);
+  margin-bottom: 10px;
+}
+
+/* ---------- IMPATTO ---------- */
+
+.impatto {
+  text-align: center;
+}
+
+.impatto p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  background-color: var(--verde-scuro);
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+footer a {
+  color: var(--corallo);
+}
+
+footer .social-icons {
+  margin: 20px 0;
+}
+
+footer .social-icons a {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* ---------- SCHERMI PICCOLI ---------- */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
